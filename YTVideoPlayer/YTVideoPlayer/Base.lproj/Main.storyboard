@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YTVideoPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fi7-7a-i2O" customClass="YTPlayerView">
+                                <rect key="frame" x="283" y="212" width="800" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="800" id="Gx6-wp-0JU"/>
+                                    <constraint firstAttribute="height" constant="600" id="M3p-Nm-ZQd"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23a-gw-Wtv">
+                                <rect key="frame" x="283" y="144" width="100" height="45"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="0.97032368183135986" green="0.069935507118276535" blue="0.012055963539352401" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oEs-7n-Myp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kah-cV-dEb">
+                                <rect key="frame" x="461" y="144" width="100" height="45"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="28"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleColor" red="0.97032368183135986" green="0.069935507118276535" blue="0.012055963539352401" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BRG-dI-nUU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkQ-ZB-I7X">
+                                <rect key="frame" x="633" y="144" width="100" height="45"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="0.97032368183135986" green="0.069935507118276535" blue="0.012055963539352401" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZaL-pO-VJh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAi-Hi-886">
+                                <rect key="frame" x="962" y="144" width="121" height="45"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="Previous">
+                                    <color key="titleColor" red="0.97032368183135986" green="0.069935507118276535" blue="0.012055963539352401" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="playNextVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nQ6-zU-1G3"/>
+                                    <action selector="playPreviousVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CU6-X4-elw"/>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TNw-sE-0JD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDv-DZ-VKk">
+                                <rect key="frame" x="806" y="144" width="100" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="rQn-R1-Dhm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.97032368183135986" green="0.069935507118276535" blue="0.012055963539352401" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="playNextVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Je-ZE-dnF"/>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bsQ-Dt-hVU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3483211195" green="0.63072299809999999" blue="0.61642897090000004" alpha="0.76002155169999996" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xAi-Hi-886" firstAttribute="height" secondItem="fDv-DZ-VKk" secondAttribute="height" id="0w6-G5-3Xy"/>
+                            <constraint firstItem="fDv-DZ-VKk" firstAttribute="height" secondItem="23a-gw-Wtv" secondAttribute="height" id="5fd-gk-XHY"/>
+                            <constraint firstItem="Kah-cV-dEb" firstAttribute="height" secondItem="23a-gw-Wtv" secondAttribute="height" id="8zF-lp-ujf"/>
+                            <constraint firstItem="fDv-DZ-VKk" firstAttribute="bottom" secondItem="23a-gw-Wtv" secondAttribute="bottom" id="AME-11-9Ti"/>
+                            <constraint firstItem="Kah-cV-dEb" firstAttribute="bottom" secondItem="23a-gw-Wtv" secondAttribute="bottom" id="JMG-l2-gS6"/>
+                            <constraint firstItem="fDv-DZ-VKk" firstAttribute="leading" secondItem="zkQ-ZB-I7X" secondAttribute="trailing" constant="73" id="KQu-wN-tmo"/>
+                            <constraint firstItem="zkQ-ZB-I7X" firstAttribute="leading" secondItem="Kah-cV-dEb" secondAttribute="trailing" constant="72" id="Kmw-kp-RtO"/>
+                            <constraint firstItem="xAi-Hi-886" firstAttribute="trailing" secondItem="Fi7-7a-i2O" secondAttribute="trailing" id="O0W-DK-q3c"/>
+                            <constraint firstItem="23a-gw-Wtv" firstAttribute="leading" secondItem="Fi7-7a-i2O" secondAttribute="leading" id="TuR-OU-HSD"/>
+                            <constraint firstItem="xAi-Hi-886" firstAttribute="leading" secondItem="fDv-DZ-VKk" secondAttribute="trailing" constant="56" id="bvp-7F-cV0"/>
+                            <constraint firstItem="Kah-cV-dEb" firstAttribute="top" secondItem="23a-gw-Wtv" secondAttribute="top" id="dFG-J8-WdY"/>
+                            <constraint firstItem="Fi7-7a-i2O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fCa-3f-My5"/>
+                            <constraint firstItem="zkQ-ZB-I7X" firstAttribute="height" secondItem="23a-gw-Wtv" secondAttribute="height" id="gRi-0T-Xbp"/>
+                            <constraint firstItem="zkQ-ZB-I7X" firstAttribute="bottom" secondItem="23a-gw-Wtv" secondAttribute="bottom" id="hbO-xs-SWl"/>
+                            <constraint firstItem="fDv-DZ-VKk" firstAttribute="width" secondItem="23a-gw-Wtv" secondAttribute="width" id="hjE-Ow-x9r"/>
+                            <constraint firstItem="Fi7-7a-i2O" firstAttribute="top" secondItem="23a-gw-Wtv" secondAttribute="bottom" constant="23" id="hza-8h-hOH"/>
+                            <constraint firstItem="Kah-cV-dEb" firstAttribute="width" secondItem="23a-gw-Wtv" secondAttribute="width" id="mbY-ch-6kC"/>
+                            <constraint firstItem="zkQ-ZB-I7X" firstAttribute="width" secondItem="23a-gw-Wtv" secondAttribute="width" id="qPM-O4-MOn"/>
+                            <constraint firstItem="fDv-DZ-VKk" firstAttribute="top" secondItem="23a-gw-Wtv" secondAttribute="top" id="raX-Af-EIb"/>
+                            <constraint firstItem="Fi7-7a-i2O" firstAttribute="top" secondItem="xAi-Hi-886" secondAttribute="bottom" constant="23" id="slt-gT-2c5"/>
+                            <constraint firstItem="zkQ-ZB-I7X" firstAttribute="top" secondItem="23a-gw-Wtv" secondAttribute="top" id="uGg-pp-brP"/>
+                            <constraint firstItem="Fi7-7a-i2O" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uZ2-1p-Ahl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ytPlayerView" destination="Fi7-7a-i2O" id="4qz-ul-enq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.60322108345534" y="137.109375"/>
+        </scene>
+    </scenes>
+</document>
