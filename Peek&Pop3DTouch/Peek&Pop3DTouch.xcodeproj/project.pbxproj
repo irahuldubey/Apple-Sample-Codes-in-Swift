@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB8D11B11EF2186700059B6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8D11B01EF2186700059B6E /* AppDelegate.swift */; };
+		BB8D11B31EF2186700059B6E /* PeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8D11B21EF2186700059B6E /* PeekViewController.swift */; };
+		BB8D11B61EF2186700059B6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8D11B41EF2186700059B6E /* Main.storyboard */; };
+		BB8D11B81EF2186700059B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8D11B71EF2186700059B6E /* Assets.xcassets */; };
+		BB8D11BB1EF2186700059B6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8D11B91EF2186700059B6E /* LaunchScreen.storyboard */; };
+		BB8D11C31EF22CCB00059B6E /* PoppedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8D11C21EF22CCB00059B6E /* PoppedViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB8D11AD1EF2186700059B6E /* Peek&Pop3DTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Peek&Pop3DTouch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8D11B01EF2186700059B6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB8D11B21EF2186700059B6E /* PeekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeekViewController.swift; sourceTree = "<group>"; };
+		BB8D11B51EF2186700059B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB8D11B71EF2186700059B6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB8D11BA1EF2186700059B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB8D11BC1EF2186700059B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB8D11C21EF22CCB00059B6E /* PoppedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoppedViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB8D11AA1EF2186700059B6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB8D11A41EF2186700059B6E = {
+			isa = PBXGroup;
+			children = (
+				BB8D11AF1EF2186700059B6E /* Peek&Pop3DTouch */,
+				BB8D11AE1EF2186700059B6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB8D11AE1EF2186700059B6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB8D11AD1EF2186700059B6E /* Peek&Pop3DTouch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB8D11AF1EF2186700059B6E /* Peek&Pop3DTouch */ = {
+			isa = PBXGroup;
+			children = (
+				BB8D11B01EF2186700059B6E /* AppDelegate.swift */,
+				BB8D11B21EF2186700059B6E /* PeekViewController.swift */,
+				BB8D11C21EF22CCB00059B6E /* PoppedViewController.swift */,
+				BB8D11B41EF2186700059B6E /* Main.storyboard */,
+				BB8D11B71EF2186700059B6E /* Assets.xcassets */,
+				BB8D11B91EF2186700059B6E /* LaunchScreen.storyboard */,
+				BB8D11BC1EF2186700059B6E /* Info.plist */,
+			);
+			path = "Peek&Pop3DTouch";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB8D11AC1EF2186700059B6E /* Peek&Pop3DTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB8D11BF1EF2186700059B6E /* Build configuration list for PBXNativeTarget "Peek&Pop3DTouch" */;
+			buildPhases = (
+				BB8D11A91EF2186700059B6E /* Sources */,
+				BB8D11AA1EF2186700059B6E /* Frameworks */,
+				BB8D11AB1EF2186700059B6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Peek&Pop3DTouch";
+			productName = "Peek&Pop3DTouch";
+			productReference = BB8D11AD1EF2186700059B6E /* Peek&Pop3DTouch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB8D11A51EF2186700059B6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "AT&T";
+				TargetAttributes = {
+					BB8D11AC1EF2186700059B6E = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BB8D11A81EF2186700059B6E /* Build configuration list for PBXProject "Peek&Pop3DTouch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB8D11A41EF2186700059B6E;
+			productRefGroup = BB8D11AE1EF2186700059B6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB8D11AC1EF2186700059B6E /* Peek&Pop3DTouch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB8D11AB1EF2186700059B6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8D11BB1EF2186700059B6E /* LaunchScreen.storyboard in Resources */,
+				BB8D11B81EF2186700059B6E /* Assets.xcassets in Resources */,
+				BB8D11B61EF2186700059B6E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB8D11A91EF2186700059B6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8D11C31EF22CCB00059B6E /* PoppedViewController.swift in Sources */,
+				BB8D11B31EF2186700059B6E /* PeekViewController.swift in Sources */,
+				BB8D11B11EF2186700059B6E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BB8D11B41EF2186700059B6E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB8D11B51EF2186700059B6E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB8D11B91EF2186700059B6E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB8D11BA1EF2186700059B6E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB8D11BD1EF2186700059B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB8D11BE1EF2186700059B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB8D11C01EF2186700059B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Peek&Pop3DTouch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.3Dtouch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BB8D11C11EF2186700059B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Peek&Pop3DTouch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.3Dtouch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB8D11A81EF2186700059B6E /* Build configuration list for PBXProject "Peek&Pop3DTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8D11BD1EF2186700059B6E /* Debug */,
+				BB8D11BE1EF2186700059B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB8D11BF1EF2186700059B6E /* Build configuration list for PBXNativeTarget "Peek&Pop3DTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8D11C01EF2186700059B6E /* Debug */,
+				BB8D11C11EF2186700059B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB8D11A51EF2186700059B6E /* Project object */;
+}
