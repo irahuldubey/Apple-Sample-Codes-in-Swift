@@ -1,2 +1,2 @@
 # iOS
-Small projects and iOS concepts 
+Small projects on iOS concepts 
