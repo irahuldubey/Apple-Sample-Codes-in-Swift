@@ -16,6 +16,7 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    
     //Added notification observer for the notification name "SampleNotification"
     NotificationCenter.default.addObserver(self, selector: #selector(executeNotification), name: NSNotification.Name(rawValue: kNotificationConstant), object: nil)
     
