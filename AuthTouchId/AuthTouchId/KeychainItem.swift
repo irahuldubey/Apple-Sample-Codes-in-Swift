@@ -72,15 +72,15 @@ class KeychainItem {
     }
   }
   
-  func retrieveValueFromKeychain(completionHandler: @escaping (_ username: String?, _ password: String?) -> Void) {
+  func retrieveValueFromKeychain(completionHandler: @escaping (Bool) -> Void) {
     
-    DispatchQueue.global().async {
+    DispatchQueue.main.async {
       let select_query: NSDictionary = [
         kSecClass: kSecClassGenericPassword,
         kSecAttrService: self.attributeService,
         kSecAttrAccount: self.attributeAccount,
         kSecReturnData: true,
-        kSecUseOperationPrompt: "Enter in Lounge"
+        kSecUseOperationPrompt: "Scan Bio Profile for instant card approval"
       ]
       
       var extractedData: CFTypeRef?
@@ -93,15 +93,17 @@ class KeychainItem {
           
           print("Password value : \(password)")
           
-          completionHandler(self.attributeAccount, password)
+          completionHandler(true)
           
         } else {
           print("Invalid Data")
         }
       } else if select_status == errSecUserCanceled {
         print("Operation has been cancelled.")
+        completionHandler(false)
       } else {
         print("Failed with error status\(select_status).")
+        completionHandler(false)
       }
     }
   }

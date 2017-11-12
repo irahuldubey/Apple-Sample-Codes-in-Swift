@@ -12,7 +12,10 @@ import UIKit
 //Imported this framework for touch id sign up
 import LocalAuthentication
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, NVActivityIndicatorViewable {
+  
+//  var animatedView: NVActivityIndicatorView!
+  var loginViewModel: LoginViewModel!
   
   @IBOutlet weak var userNameTextField: UITextField!
   @IBOutlet weak var passwordTextField: UITextField!
@@ -21,6 +24,7 @@ class LoginViewController: UIViewController {
   @IBOutlet weak var touchIDLabel: UILabel!
   
   private var isTouchIdEnabled: Bool = false
+  private var saveUserID: Bool = false
   private let touchIdAuth = TouchIDAuth()
   
   //MARK: View Life Cycle
@@ -29,9 +33,20 @@ class LoginViewController: UIViewController {
     
     super.viewDidLoad()
     
+    if let username = UserDefaults.standard.object(forKey: "Username") as? String{
+      userNameTextField.text = username
+
+    }
+    
+    //Set up user interface
     setupUserInterface()
   }
 
+  private func setUpActivityIndicator() {
+    let size = CGSize(width: 50, height: 50)
+    startAnimating(size, message: "Logging In", type: NVActivityIndicatorType(rawValue: 23)!)
+  }
+  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
   }
@@ -53,24 +68,40 @@ class LoginViewController: UIViewController {
     
     guard let switchValue = sender as? UISwitch else { return }
     
-    if switchValue.isOn {
-      isTouchIdEnabled = true
+    if switchValue.tag == 2 {
+      if switchValue.isOn {
+        isTouchIdEnabled = true
+      }
+      else {
+        isTouchIdEnabled = false
+      }
     }
-    else {
-      isTouchIdEnabled = false
+    else{
+      if switchValue.isOn {
+        saveUserID = true
+      }
+      else {
+        saveUserID = false
+      }
     }
-    
   }
   
   @IBAction func login(_ sender: Any) {
-    
+  
     guard isValidCredentials() else {
       return
     }
     
+    setUpActivityIndicator()
+    
     let validUsername = self.userNameTextField.text!
     
+    if saveUserID {
+      UserDefaults.standard.set(validUsername, forKey: "Username")
+    }
+    
     KeychainItem.sharedInstance.validateItemInKeychain(forUsername: validUsername) { (success) in
+      
       if success {
         self.showHomeViewController()
       }
@@ -82,6 +113,10 @@ class LoginViewController: UIViewController {
           self.showHomeViewController()
         }
       }
+      
+      self.loginViewModel = LoginViewModel.init(withUser: Customer.init(withUsername: self.userNameTextField.text!,
+                                                                   andPassword:  self.passwordTextField.text!))
+      self.stopAnimating()
     }
   }
   
@@ -108,7 +143,20 @@ class LoginViewController: UIViewController {
   
   private func showHomeViewController() {
     DispatchQueue.main.async {
-      self.performSegue(withIdentifier: Utilities.homeSegue, sender: self)
+      let storyboard = UIStoryboard(name: "Main", bundle: nil)
+      let viewController = storyboard.instantiateViewController(withIdentifier :"HomeId") as! HomeViewController
+      viewController.customer = Customer.init(withUsername: self.userNameTextField.text!, andPassword: self.passwordTextField.text!)
+      self.present(viewController, animated: true)
+    }
+  }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == Utilities.homeSegue{
+      if let homeVC = segue.destination as? HomeViewController {
+        if let username = self.userNameTextField.text {
+          homeVC.username = username
+        }
+      }
     }
   }
   
