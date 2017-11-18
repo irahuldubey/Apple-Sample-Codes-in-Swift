@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AppleSDGothicNeo.ttc">
+            <string>AppleSDGothicNeo-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flickr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtH-bD-aUj">
+                                <rect key="frame" x="64" y="272.5" width="247.5" height="122.5"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="102"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultFlickr" translatesAutoresizingMaskIntoConstraints="NO" id="DSi-c1-7EV">
+                                <rect key="frame" x="147.5" y="171" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="2ia-eb-Osh"/>
+                                    <constraint firstAttribute="height" constant="80" id="k87-FU-S6O"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3483211195" green="0.63072299809999999" blue="0.61642897090000004" alpha="0.39885395752191782" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DSi-c1-7EV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="2kV-vr-Irb"/>
+                            <constraint firstItem="OtH-bD-aUj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="CwG-tY-8Yd"/>
+                            <constraint firstItem="OtH-bD-aUj" firstAttribute="top" secondItem="DSi-c1-7EV" secondAttribute="bottom" constant="21.5" id="LA8-w8-cRK"/>
+                            <constraint firstItem="OtH-bD-aUj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="pAC-JT-n0p"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="defaultFlickr" width="150" height="150"/>
+    </resources>
+</document>
