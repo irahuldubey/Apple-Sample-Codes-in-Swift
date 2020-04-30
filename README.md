@@ -26,4 +26,4 @@ https://github.com/creative-rd/Apple-Sample-Codes-in-Swift/tree/master/iOS
 
 Concepts related to tvOS
 
-https://github.com/creative-rd/Apple-Sample-Codes-in-Swift/tree/master/tvOS%20
+https://github.com/creative-rd/Apple-Sample-Codes-in-Swift/tree/master/tvOS
