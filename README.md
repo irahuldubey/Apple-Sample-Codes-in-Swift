@@ -1,6 +1,8 @@
 # Concepts 
 
-Sample code related to multithreading, throttling, dispatch group, cancellable tasks etc. /Concepts
+Sample code related to multithreading, throttling, dispatch group, cancellable tasks etc. 
+
+https://github.com/creative-rd/Apple-Sample-Codes-in-Swift/tree/master/Concepts 
 
 # Sample Applications
 
