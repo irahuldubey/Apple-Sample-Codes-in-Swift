@@ -1,8 +1,6 @@
-# Sample codes for iOS tvOS
-
 # Concepts 
 
-Sample code related to multithreading, throttling, dispatch group, cancellable tasks etc.
+Sample code related to multithreading, throttling, dispatch group, cancellable tasks etc. /Concepts
 
 # Sample Applications
 
