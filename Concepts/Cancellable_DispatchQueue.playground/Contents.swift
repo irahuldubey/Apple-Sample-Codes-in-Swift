@@ -8,15 +8,15 @@ class CancelableTask {
   
   typealias Handler = () -> ()
   
-  private var cancelled: Bool = false
+  static var cancelled: Bool = false
   
   func cancelOperation() {
-    self.cancelled = true
+    CancelableTask.cancelled = true
   }
   
   public static func dispatch(queue: DispatchQueue, completionHandler: @escaping Handler) -> CancelableTask {
     let task = CancelableTask()
-    if cancelled == false {
+    if CancelableTask.cancelled == false {
       queue.async{
         completionHandler()
       }

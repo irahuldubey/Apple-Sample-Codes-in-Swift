@@ -1,3 +1,3 @@
-# SwiftPackageManager
+# MyFirstSPMDemo
 
 A description of this package.
